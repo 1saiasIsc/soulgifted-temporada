@@ -1,85 +1,1712 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Opciones Carrusel Temporada | SoulGifted Studio</title>
-<style>
-:root{
-  --ink:#071936;--muted:#667790;--blue:#0b4ea2;--blue-dark:#073779;--blue-soft:#eef6ff;--white:#fff;--line:rgba(11,78,162,.13);--gold:#d4aa58;--shadow:0 24px 70px rgba(35,78,132,.16);--radius:26px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoulGifted Studio | Catálogo Principal</title>
+
+
+  <style>
+
+
+.nav-btn {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+  padding: 10px 13px;
+  border-radius: 999px;
+  cursor: pointer;
 }
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:radial-gradient(circle at 0% 24%,rgba(188,220,255,.62),transparent 25%),radial-gradient(circle at 96% 4%,rgba(218,237,255,.92),transparent 26%),linear-gradient(180deg,#fff 0%,#f3f9ff 55%,#fff 100%);min-height:100vh;padding:24px 12px 60px;overflow-x:hidden}.page{width:min(1180px,100%);margin:auto}.demo-title{background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.9);box-shadow:var(--shadow);border-radius:30px;padding:26px;margin-bottom:22px;text-align:center}.demo-title h1{font-size:clamp(28px,4vw,48px);letter-spacing:-1px;margin-bottom:8px}.demo-title p{color:var(--muted);line-height:1.5}.option{background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.95);box-shadow:0 18px 48px rgba(35,78,132,.12);border-radius:30px;padding:22px;margin:20px 0}.option-head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:16px}.option-head h2{font-size:22px}.option-head span{font-size:12px;font-weight:900;color:var(--blue-dark);background:rgba(11,78,162,.08);border:1px solid var(--line);padding:8px 12px;border-radius:999px;white-space:nowrap}.season-strip{position:relative;overflow:hidden;border-radius:28px;background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(238,246,255,.98));border:1px solid var(--line);box-shadow:0 14px 40px rgba(35,78,132,.10)}.season-track{display:flex;width:max-content;animation:scroll 28s linear infinite}.season-strip:hover .season-track{animation-play-state:paused}@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}.season-card{position:relative;flex:0 0 auto;cursor:pointer;border:none;background:transparent;padding:0;overflow:hidden}.season-card img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s ease}.season-card:hover img{transform:scale(1.055)}.season-card::after{content:"Ver diseño";position:absolute;left:50%;bottom:13px;transform:translateX(-50%) translateY(8px);opacity:0;background:rgba(7,25,54,.78);color:white;font-size:12px;font-weight:900;padding:8px 11px;border-radius:999px;transition:.2s;white-space:nowrap}.season-card:hover::after{opacity:1;transform:translateX(-50%) translateY(0)}.option-1 .season-track{gap:14px;padding:16px}.option-1 .season-card{width:210px;height:270px;border-radius:22px;box-shadow:0 16px 34px rgba(35,78,132,.15)}.option-2 .season-track{gap:0;padding:0}.option-2 .season-card{width:260px;height:170px}.option-2 .season-card img{border-right:1px solid rgba(255,255,255,.7)}.option-3 .season-strip{background:linear-gradient(135deg,#071936,#0b4ea2);padding:18px}.option-3 .season-track{gap:18px}.option-3 .season-card{width:230px;height:230px;border-radius:50%;box-shadow:0 18px 42px rgba(0,0,0,.25);border:5px solid rgba(255,255,255,.9)}.option-4 .season-track{gap:12px;padding:14px}.option-4 .season-card{width:300px;height:210px;border-radius:24px;box-shadow:0 16px 34px rgba(35,78,132,.14)}.option-4 .season-card:nth-child(2n){width:180px}.option-4 .season-card:nth-child(3n){width:240px}.modal{position:fixed;inset:0;background:rgba(7,25,54,.72);display:none;align-items:center;justify-content:center;z-index:99999;padding:20px}.modal.active{display:flex}.modal-card{width:min(900px,100%);background:white;border-radius:30px;padding:16px;box-shadow:0 34px 90px rgba(0,0,0,.35);position:relative}.modal-card img{width:100%;max-height:74vh;object-fit:contain;border-radius:22px;background:#eef6ff;display:block}.close{position:absolute;right:16px;top:16px;border:none;border-radius:999px;background:rgba(7,25,54,.82);color:white;width:42px;height:42px;font-size:22px;cursor:pointer}.modal-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}.modal-actions a{padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:900}.album{background:linear-gradient(135deg,#5ca2ff,var(--blue-dark));color:white}.whatsapp{background:#25d366;color:white}.note{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.45}@media(max-width:640px){body{padding:0 0 40px}.demo-title,.option{border-radius:0;margin:0 0 14px}.option{padding:14px}.option-head{align-items:flex-start}.option-head h2{font-size:18px}.option-head span{font-size:10px}.option-1 .season-card{width:150px;height:200px}.option-2 .season-card{width:210px;height:140px}.option-3 .season-card{width:160px;height:160px}.option-4 .season-card{width:230px;height:165px}.option-4 .season-card:nth-child(2n){width:150px}.modal{padding:10px}.modal-card{border-radius:24px;padding:10px}}
-</style>
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: var(--blue-dark);
+  color: white;
+}
+
+
+
+
+    :root {
+      --ink: #071936;
+      --muted: #667790;
+      --blue: #0b4ea2;
+      --blue-dark: #073779;
+      --blue-soft: #eef6ff;
+      --white: #ffffff;
+      --line: rgba(11, 78, 162, 0.13);
+      --gold: #d4aa58;
+      --rose: #e85f9c;
+      --whatsapp: #25d366;
+      --messenger: #0084ff;
+      --facebook: #1877f2;
+      --shadow: 0 24px 70px rgba(35, 78, 132, 0.16);
+      --radius: 26px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 0% 24%, rgba(188, 220, 255, .62), transparent 25%),
+        radial-gradient(circle at 96% 4%, rgba(218, 237, 255, .92), transparent 26%),
+        radial-gradient(circle at 80% 84%, rgba(255, 245, 224, .78), transparent 24%),
+        linear-gradient(180deg, #ffffff 0%, #f3f9ff 55%, #ffffff 100%);
+      overflow-x: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      pointer-events: none;
+      z-index: 0;
+      border-radius: 50%;
+      filter: blur(10px);
+      opacity: .75;
+    }
+
+    body::before {
+      width: 310px;
+      height: 540px;
+      left: -145px;
+      top: 120px;
+      background: radial-gradient(circle, rgba(88,139,197,.28), transparent 58%);
+    }
+
+    body::after {
+      width: 390px;
+      height: 390px;
+      right: -150px;
+      top: -95px;
+      background: radial-gradient(circle, rgba(88,139,197,.20), transparent 65%);
+    }
+
+    a { color: inherit; }
+
+    .home-page {
+      position: relative;
+      z-index: 1;
+      width: min(1280px, calc(100% - 26px));
+      margin: 0 auto;
+      padding: 18px 0 58px;
+    }
+
+    .app-shell {
+      overflow: hidden;
+      border-radius: 34px;
+      background: rgba(255,255,255,.76);
+      border: 1px solid rgba(255,255,255,.95);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .topbar {
+      min-height: 82px;
+      display: grid;
+      grid-template-columns: 230px 1fr auto;
+      align-items: center;
+      gap: 20px;
+      padding: 16px 26px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.76);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 900;
+      letter-spacing: -.3px;
+      color: var(--ink);
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      color: white;
+      background: linear-gradient(135deg, #77b8ff, var(--blue-dark));
+      box-shadow: 0 12px 28px rgba(11, 78, 162, .2);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .nav-links a,
+    .nav-btn {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+      padding: 10px 13px;
+      border-radius: 999px;
+      transition: .2s ease;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active,
+    .nav-btn:hover,
+    .nav-btn.active {
+      background: var(--blue-dark);
+      color: white;
+    }
+
+    .quick-contact {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mini-btn {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 900;
+      transition: .22s ease;
+      white-space: nowrap;
+    }
+
+    .mini-btn:hover { transform: translateY(-2px); }
+    .mini-whatsapp { background: var(--whatsapp); color: white; }
+    .mini-messenger { background: var(--messenger); color: white; }
+
+    .hero {
+      position: relative;
+      min-height: 560px;
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      align-items: center;
+      gap: 34px;
+      padding: clamp(34px, 5vw, 70px);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 72% 26%, rgba(74, 146, 234, .16), transparent 24%),
+        radial-gradient(circle at 30% 10%, rgba(255, 255, 255, .95), transparent 20%),
+        linear-gradient(135deg, rgba(255,255,255,.48), rgba(239,247,255,.78));
+      z-index: 0;
+    }
+
+    .hero-content,
+    .hero-visual {
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 9px 14px;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      font-size: 13px;
+      font-weight: 900;
+      background: rgba(11,78,162,.08);
+      border: 1px solid rgba(11,78,162,.12);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: .94;
+      letter-spacing: -2.5px;
+      margin-bottom: 20px;
+      color: var(--ink);
+    }
+
+    .hero h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      max-width: 660px;
+      font-size: clamp(16px, 2vw, 20px);
+      line-height: 1.7;
+      color: var(--muted);
+      margin-bottom: 26px;
+      text-align: justify;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      min-height: 50px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 19px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      transition: .22s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(35,78,132,.16);
+    }
+
+    .btn-whatsapp { background: var(--whatsapp); color: white; }
+    .btn-messenger { background: var(--messenger); color: white; }
+    .btn-facebook { background: var(--facebook); color: white; }
+    .btn-gold { background: linear-gradient(135deg, #f2d98f, var(--gold)); color: #241a04; }
+    .btn-primary { background: linear-gradient(135deg, #5ca2ff, var(--blue-dark)); color: white; }
+
+    .hero-visual-card {
+      position: relative;
+      border-radius: 34px;
+      padding: 16px;
+      background: rgba(255,255,255,.74);
+      border: 1px solid rgba(255,255,255,.95);
+      box-shadow: 0 26px 68px rgba(35,78,132,.18);
+      backdrop-filter: blur(18px);
+      transform: rotate(2deg);
+    }
+
+    .hero-visual-card::before {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      right: -40px;
+      top: -40px;
+      background: rgba(11,78,162,.1);
+      z-index: -1;
+    }
+
+    .hero-visual-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 26px;
+      display: block;
+      background: var(--blue-soft);
+    }
+
+    .hero-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-top: 14px;
+      color: var(--ink);
+      font-weight: 900;
+      padding: 0 4px;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      padding: 0 clamp(20px, 5vw, 70px) 42px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat-card {
+      min-height: 118px;
+      border-radius: 24px;
+      padding: 18px;
+      background: rgba(255,255,255,.80);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(35,78,132,.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: .22s ease;
+    }
+
+    .stat-card:hover { transform: translateY(-5px); background: white; }
+    .stat-card b { font-size: 24px; margin-bottom: 6px; color: var(--blue-dark); }
+    .stat-card span { color: var(--muted); font-size: 13px; line-height: 1.4; font-weight: 750; }
+
+    .section-wrap {
+      padding: 0 clamp(20px, 5vw, 70px) 52px;
+    }
+
+    .section-heading {
+      margin: 8px 0 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: end;
+      flex-wrap: wrap;
+    }
+
+    .section-heading h2 {
+      color: var(--ink);
+      font-size: clamp(30px, 4.5vw, 52px);
+      line-height: 1;
+      letter-spacing: -1.5px;
+      margin-bottom: 9px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 700px;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .view-pill {
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      background: rgba(11,78,162,.07);
+      border: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .intro-card {
+      background: linear-gradient(135deg, rgba(255,255,255,.95), rgba(239,247,255,.92));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 14px 38px rgba(35,78,132,.08);
+      margin-bottom: 26px;
+    }
+
+    .intro-card p {
+      max-width: 940px;
+      margin: 0 auto;
+      text-align: center;
+      color: var(--ink);
+      font-size: clamp(16px, 2vw, 20px);
+      line-height: 1.7;
+    }
+
+    .collections-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .collection-card {
+      position: relative;
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 18px 44px rgba(35,78,132,.10);
+      border: 1px solid rgba(11,78,162,.09);
+      transition: .24s ease;
+    }
+
+    .collection-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 26px 60px rgba(35,78,132,.16);
+      border-color: rgba(11,78,162,.22);
+    }
+
+    .collection-image {
+      position: relative;
+      overflow: hidden;
+      height: 292px;
+      background: #edf7ff;
+    }
+
+    .collection-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .35s ease;
+    }
+
+    .collection-card:hover .collection-image img { transform: scale(1.055); }
+
+    .collection-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--blue-dark);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      box-shadow: 0 12px 24px rgba(0,0,0,.12);
+    }
+
+    .collection-body { padding: 20px; }
+
+    .collection-body h3 {
+      color: var(--ink);
+      font-size: 22px;
+      margin-bottom: 9px;
+      letter-spacing: -.4px;
+    }
+
+    .collection-body p {
+      color: var(--muted);
+      line-height: 1.52;
+      margin-bottom: 18px;
+      font-size: 15px;
+    }
+
+    .collection-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .collection-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 15px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #5ca2ff, var(--blue-dark));
+      color: white;
+      text-decoration: none;
+      font-weight: 900;
+      transition: .2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .collection-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(11,78,162,.18);
+    }
+
+    .collection-note {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .step-card {
+      background: rgba(255,255,255,.84);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 14px 36px rgba(35,78,132,.08);
+      transition: .22s ease;
+    }
+
+    .step-card:hover { transform: translateY(-5px); background: white; }
+
+    .step-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(11,78,162,.08);
+      color: var(--blue-dark);
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .step-card h3 {
+      color: var(--ink);
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .step-card p {
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 15px;
+    }
+
+    .trust-section {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 22px;
+      align-items: stretch;
+      margin-top: 30px;
+    }
+
+    .trust-image {
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 18px 46px rgba(35,78,132,.12);
+      min-height: 360px;
+      background: #edf7ff;
+      border: 1px solid rgba(255,255,255,.9);
+    }
+
+    .trust-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .trust-card {
+      background: rgba(255,255,255,.86);
+      border-radius: 30px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 46px rgba(35,78,132,.10);
+    }
+
+    .trust-card h2 {
+      color: var(--ink);
+      font-size: clamp(28px, 4vw, 44px);
+      margin-bottom: 16px;
+      line-height: 1.05;
+      letter-spacing: -1px;
+    }
+
+    .trust-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .trust-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--ink);
+      line-height: 1.42;
+      font-size: 16px;
+      padding: 12px;
+      border-radius: 16px;
+      background: rgba(11,78,162,.04);
+    }
+
+    .trust-item span {
+      flex: 0 0 auto;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(37, 211, 102, .16);
+      color: #087f34;
+      font-weight: 900;
+    }
+
+    .final-cta {
+      margin: 36px clamp(20px, 5vw, 70px) 34px;
+      border-radius: 32px;
+      padding: clamp(32px, 5vw, 58px) 26px;
+      text-align: center;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 18%, rgba(255,255,255,.85), transparent 24%),
+        radial-gradient(circle at 88% 80%, rgba(11,78,162,.12), transparent 24%),
+        linear-gradient(135deg, #f3f9ff 0%, #ffffff 100%);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 48px rgba(35,78,132,.10);
+    }
+
+    .final-cta h2 {
+      font-size: clamp(30px, 5vw, 56px);
+      line-height: 1;
+      margin-bottom: 12px;
+      letter-spacing: -1.4px;
+    }
+
+    .final-cta p {
+      max-width: 720px;
+      margin: 0 auto 22px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    .floating-bar {
+      position: fixed;
+      right: 20px;
+      top: 96px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+
+    .float-btn {
+      position: relative;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 14px 34px rgba(35,78,132,.22);
+      transition: .2s ease;
+    }
+
+    .float-btn.whatsapp { background: var(--whatsapp); }
+    .float-btn.messenger { background: var(--messenger); }
+    .float-btn.facebook { background: var(--facebook); font-weight: 900; }
+
+    .float-btn:hover { transform: scale(1.1); }
+
+    .float-btn::after {
+      content: attr(data-label);
+      position: absolute;
+      right: 65px;
+      background: rgba(7,25,54,.82);
+      color: white;
+      padding: 7px 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      opacity: 0;
+      transition: .2s;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .float-btn:hover::after { opacity: 1; }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding: 0 20px 30px;
+    }
+
+
+
+    /* ===== CINTA VISUAL DE TEMPORADA · OPCIÓN 2 ===== */
+    .season-showcase {
+      position: relative;
+      z-index: 2;
+      padding: 0 clamp(20px, 5vw, 70px) 34px;
+    }
+
+    .season-showcase-inner {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(255,255,255,.94), rgba(238,246,255,.98));
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 40px rgba(35,78,132,.10);
+    }
+
+    .season-showcase-inner::before,
+    .season-showcase-inner::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 86px;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .season-showcase-inner::before {
+      left: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,.96), transparent);
+    }
+
+    .season-showcase-inner::after {
+      right: 0;
+      background: linear-gradient(270deg, rgba(255,255,255,.96), transparent);
+    }
+
+    .season-track {
+      display: flex;
+      width: max-content;
+      animation: seasonScroll 30s linear infinite;
+    }
+
+    .season-showcase-inner:hover .season-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes seasonScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .season-item {
+      position: relative;
+      flex: 0 0 auto;
+      width: 260px;
+      height: 170px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      overflow: hidden;
+      border-right: 1px solid rgba(255,255,255,.72);
+      font-family: inherit;
+    }
+
+    .season-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .35s ease, filter .35s ease;
+    }
+
+    .season-item:hover img {
+      transform: scale(1.055);
+      filter: brightness(.92);
+    }
+
+    .season-item::after {
+      content: "Ver diseño";
+      position: absolute;
+      left: 50%;
+      bottom: 13px;
+      transform: translateX(-50%) translateY(8px);
+      opacity: 0;
+      background: rgba(7,25,54,.78);
+      color: white;
+      font-size: 12px;
+      font-weight: 900;
+      padding: 8px 11px;
+      border-radius: 999px;
+      transition: .2s ease;
+      white-space: nowrap;
+    }
+
+    .season-item:hover::after {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .season-modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(7,25,54,.72);
+      z-index: 99999;
+    }
+
+    .season-modal.active {
+      display: flex;
+    }
+
+    .season-modal-card {
+      position: relative;
+      width: min(900px, 100%);
+      background: white;
+      border-radius: 30px;
+      padding: 16px;
+      box-shadow: 0 34px 90px rgba(0,0,0,.35);
+    }
+
+    .season-modal-card img {
+      width: 100%;
+      max-height: 74vh;
+      object-fit: contain;
+      display: block;
+      border-radius: 22px;
+      background: var(--blue-soft);
+    }
+
+    .season-close {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      width: 42px;
+      height: 42px;
+      border: none;
+      border-radius: 999px;
+      background: rgba(7,25,54,.82);
+      color: white;
+      font-size: 22px;
+      font-weight: 900;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .season-modal-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .season-modal-actions a {
+      padding: 12px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      transition: .2s ease;
+    }
+
+    .season-modal-actions a:hover {
+      transform: translateY(-2px);
+    }
+
+    .season-album-btn {
+      background: linear-gradient(135deg, #5ca2ff, var(--blue-dark));
+      color: white;
+    }
+
+    .season-whatsapp-btn {
+      background: var(--whatsapp);
+      color: white;
+    }
+
+    @media (max-width: 1050px) {
+      .topbar { grid-template-columns: 1fr; }
+      .nav-links { justify-content: flex-start; }
+      .quick-contact { justify-content: flex-start; flex-wrap: wrap; }
+      .hero, .trust-section { grid-template-columns: 1fr; }
+      .hero-visual-card { transform: none; }
+      .collections-grid, .steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        background:
+          radial-gradient(circle at 0% 12%, rgba(188, 220, 255, .55), transparent 28%),
+          linear-gradient(180deg, #ffffff 0%, #f4faff 100%);
+      }
+
+      .home-page {
+        width: 100%;
+        padding: 0 0 34px;
+      }
+
+      .app-shell {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+        background: rgba(255,255,255,.92);
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px 12px 12px;
+        background: rgba(255,255,255,.94);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 12px 30px rgba(35,78,132,.08);
+      }
+
+      .brand {
+        justify-content: center;
+        font-size: 17px;
+      }
+
+      .brand-mark {
+        width: 38px;
+        height: 38px;
+        border-radius: 14px;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 8px;
+        padding: 2px 2px 8px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .nav-links::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-links a,
+      .nav-btn {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        padding: 9px 12px;
+        font-size: 12px;
+        background: rgba(11,78,162,.06);
+      }
+
+      .quick-contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        width: 100%;
+      }
+
+      .quick-contact .mini-btn {
+        width: 100%;
+        min-height: 42px;
+        font-size: 12px;
+        padding: 9px 10px;
+      }
+
+      .hero {
+        padding: 22px 14px 18px;
+        min-height: auto;
+        gap: 16px;
+        grid-template-columns: 1fr;
+      }
+
+      .brand-pill {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-bottom: 14px;
+      }
+
+      .hero h1 {
+        font-size: clamp(32px, 10.5vw, 44px);
+        line-height: .98;
+        letter-spacing: -1.2px;
+        margin-bottom: 14px;
+      }
+
+      .hero p {
+        font-size: 14.5px;
+        line-height: 1.56;
+        text-align: left;
+        margin-bottom: 16px;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .hero-actions .btn,
+      .btn {
+        width: 100%;
+        min-height: 48px;
+        font-size: 14px;
+      }
+
+      .hero-visual-card {
+        transform: none;
+        border-radius: 24px;
+        padding: 10px;
+        margin-top: 4px;
+      }
+
+      .hero-visual-card img {
+        height: auto;
+        max-height: 260px;
+        aspect-ratio: 1 / .74;
+        object-fit: cover;
+        border-radius: 18px;
+      }
+
+      .hero-caption {
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      .stats-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 14px 28px;
+      }
+
+      .stat-card {
+        min-height: 102px;
+        padding: 14px;
+        border-radius: 18px;
+      }
+
+      .stat-card b {
+        font-size: 20px;
+      }
+
+      .stat-card span {
+        font-size: 12px;
+      }
+
+      .section-wrap {
+        padding: 0 14px 34px;
+      }
+
+      .section-heading {
+        margin: 0 0 14px;
+        align-items: flex-start;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(28px, 9vw, 38px);
+        letter-spacing: -1px;
+      }
+
+      .section-heading p {
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .view-pill {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+
+      .intro-card {
+        padding: 18px;
+        border-radius: 20px;
+        margin-bottom: 18px;
+      }
+
+      .intro-card p {
+        font-size: 15px;
+        text-align: left;
+      }
+
+      .collections-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      }
+
+      .collection-card {
+        border-radius: 22px;
+      }
+
+      .collection-image {
+  height: 145px;
+}
+
+     .collection-badge {
+  font-size: 9px;
+  padding: 5px 8px;
+}
+
+      .collection-body {
+        padding: 12px;
+      }
+
+      .collection-body h3 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+      .collection-body p {
+  font-size: 12px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+      .collection-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .collection-link {
+  min-height: 38px;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+
+      .collection-note {
+        text-align: center;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .step-card {
+        display: grid;
+        grid-template-columns: 54px 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 14px;
+        row-gap: 4px;
+        align-items: start;
+        padding: 18px;
+        border-radius: 20px;
+      }
+
+      .step-icon {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        width: 50px;
+        height: 50px;
+        border-radius: 16px;
+        margin-bottom: 0;
+        font-size: 22px;
+      }
+
+      .step-card h3 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 18px;
+        margin-bottom: 2px;
+        line-height: 1.2;
+      }
+
+      .step-card p {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 14px;
+        line-height: 1.45;
+        margin: 0;
+      }
+
+      .trust-section {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 4px;
+      }
+
+      .trust-image {
+        min-height: 0;
+        aspect-ratio: 1 / .72;
+        border-radius: 22px;
+      }
+
+      .trust-card {
+        padding: 18px;
+        border-radius: 22px;
+      }
+
+      .trust-card h2 {
+        font-size: 28px;
+      }
+
+      .trust-item {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .trust-item span {
+        width: 24px;
+        height: 24px;
+      }
+
+      .final-cta {
+        margin: 4px 14px 26px;
+        padding: 28px 18px;
+        border-radius: 24px;
+      }
+
+      .final-cta h2 {
+        font-size: 31px;
+        letter-spacing: -1px;
+      }
+
+      .final-cta p {
+        font-size: 15px;
+      }
+
+      .floating-bar {
+        left: 50%;
+        right: auto;
+        bottom: 10px;
+        top: auto;
+        transform: translateX(-50%);
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: auto;
+        max-width: calc(100% - 20px);
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255,255,255,.88);
+        border: 1px solid rgba(11,78,162,.12);
+        backdrop-filter: blur(16px);
+        box-shadow: 0 12px 30px rgba(35,78,132,.14);
+      }
+
+      .float-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+      }
+
+      .float-btn::after {
+        display: none;
+      }
+
+
+
+      .season-showcase {
+        padding: 0 14px 24px;
+      }
+
+      .season-showcase-inner {
+        border-radius: 22px;
+      }
+
+      .season-showcase-inner::before,
+      .season-showcase-inner::after {
+        width: 36px;
+      }
+
+      .season-track {
+        animation-duration: 24s;
+      }
+
+      .season-item {
+        width: 210px;
+        height: 140px;
+      }
+
+      .season-modal {
+        padding: 10px;
+      }
+
+      .season-modal-card {
+        border-radius: 24px;
+        padding: 10px;
+      }
+
+      .season-modal-card img {
+        border-radius: 18px;
+      }
+
+      .season-close {
+        right: 12px;
+        top: 12px;
+      }
+
+      .season-modal-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .season-modal-actions a {
+        text-align: center;
+      }
+
+      .footer {
+        padding: 0 14px 86px;
+        font-size: 12px;
+      }
+
+      ::-webkit-scrollbar {
+        height: 6px;
+      }
+
+
+
+      .brand-pill {
+        max-width: 100%;
+        line-height: 1.25;
+      }
+
+      .section-heading > div,
+      .section-heading p {
+        width: 100%;
+      }
+
+      .collection-card,
+      .step-card,
+      .trust-card,
+      .intro-card,
+      .final-cta {
+        box-shadow: 0 12px 30px rgba(35,78,132,.09);
+      }
+
+      .collection-link,
+      .btn,
+      .mini-btn {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .collection-body p {
+        text-align: left;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgba(11,78,162,.25);
+        border-radius: 999px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="page">
-  <div class="demo-title">
-    <h1>Opciones de carrusel visual</h1>
-    <p>Solo imágenes destacadas de temporada. Haz clic en cualquier diseño para verlo ampliado.</p>
-  </div>
+  <main class="home-page">
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <div>SoulGifted Studio</div>
+        </div>
 
-  <section class="option option-1">
-    <div class="option-head"><h2>Opción 1 · Carrusel premium vertical</h2><span>Recomendada para termos Skinny</span></div>
-    <div class="season-strip"><div class="season-track" id="track1"></div></div>
-    <p class="note">Se ve más elegante para termos porque aprovecha el formato alto del producto.</p>
-  </section>
-
-  <section class="option option-2">
-    <div class="option-head"><h2>Opción 2 · Cinta limpia tipo escaparate</h2><span>Más discreta</span></div>
-    <div class="season-strip"><div class="season-track" id="track2"></div></div>
-    <p class="note">Ideal si quieres que se vea como una cinta flotante sin ocupar tanta altura.</p>
-  </section>
-
-  <section class="option option-3">
-    <div class="option-head"><h2>Opción 3 · Burbujas destacadas</h2><span>Más llamativa</span></div>
-    <div class="season-strip"><div class="season-track" id="track3"></div></div>
-    <p class="note">Funciona bien para temporadas fuertes como Mundial, Navidad o graduaciones.</p>
-  </section>
-
-  <section class="option option-4">
-    <div class="option-head"><h2>Opción 4 · Galería editorial</h2><span>Más moderna</span></div>
-    <div class="season-strip"><div class="season-track" id="track4"></div></div>
-    <p class="note">Da sensación de catálogo boutique; mezcla tamaños para que no se vea repetitivo.</p>
-  </section>
-</div>
-
-<div class="modal" id="modal" onclick="closeModal(event)">
-  <div class="modal-card">
-    <button class="close" onclick="hideModal()">×</button>
-    <img id="modalImg" src="" alt="Diseño destacado sublimado">
-    <div class="modal-actions">
-      <a class="album" href="https://sites.google.com/view/soulgifted-studio/SoulGifted/coleccion-mundial-2026" target="_blank" rel="noopener">Ver álbum completo →</a>
-      <a class="whatsapp" href="https://wa.me/528123279137?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1os%20del%20Mundial%202026" target="_blank" rel="noopener">Pedir por WhatsApp</a>
-    </div>
-  </div>
-</div>
+    <nav class="nav-links">
+  <button type="button" class="nav-btn active" onclick="goToSection('inicio')">Inicio</button>
+  <button type="button" class="nav-btn" onclick="goToSection('colecciones')">Colecciones</button>
+  <button type="button" class="nav-btn" onclick="goToSection('proceso')">¿Cómo funciona?</button>
+  <button type="button" class="nav-btn" onclick="goToSection('confianza')">Por qué elegirnos</button>
+</nav>
 
 <script>
-const designs = [
-  'https://res.cloudinary.com/dllosyr3z/image/upload/v1777866030/Termo_Skinny_20_oz_wrck4t.png',
-  'https://res.cloudinary.com/dllosyr3z/image/upload/v1777865731/Taza_11_oz_uvimis.png',
-  'https://res.cloudinary.com/dllosyr3z/image/upload/v1777847243/Productos_xz8l9z.png',
-  'https://res.cloudinary.com/dllosyr3z/image/upload/v1777861091/Sublimaci%C3%B3n_Productos_tpw8zn.png',
-  'https://res.cloudinary.com/dllosyr3z/image/upload/v1779065817/Colecci%C3%B3n_Papa_hsrfs0.png',
-  'https://res.cloudinary.com/dllosyr3z/image/upload/v1778890048/Colecci%C3%B3n_Mam%C3%A1_ucxjw3.png'
-];
-function buildTrack(id){
-  const track=document.getElementById(id);
-  const repeated=[...designs,...designs];
-  repeated.forEach(src=>{
-    const btn=document.createElement('button');
-    btn.className='season-card';
-    btn.onclick=()=>showModal(src);
-    btn.innerHTML=`<img src="${src}" alt="Diseño de temporada SoulGifted Studio">`;
-    track.appendChild(btn);
-  });
-}
-['track1','track2','track3','track4'].forEach(buildTrack);
-function showModal(src){document.getElementById('modalImg').src=src;document.getElementById('modal').classList.add('active');}
-function hideModal(){document.getElementById('modal').classList.remove('active');}
-function closeModal(e){if(e.target.id==='modal')hideModal();}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')hideModal();});
+  function goToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 </script>
+
+      </header>
+
+      <section id="inicio" class="hero">
+
+  <div class="hero-content">
+
+    <span class="brand-pill">
+      SoulGifted Studio · Regalos personalizados
+    </span>
+
+    <h1>
+      Regalos que se sienten,
+      no solo se entregan <span>💖</span>
+    </h1>
+
+    <p>
+      En SoulGifted Studio creemos que cada regalo debe contar una historia 💖
+      <br>
+
+      Descubre colecciones de tazas, termos y detalles personalizados diseñados para emocionar, sorprender y convertir cada regalo en un recuerdo especial.
+
+      <br>
+
+      Explora nuestras colecciones y descubre opciones que se adaptan a cada ocasión, estilo y emoción.
+    </p>
+
+  </div>
+
+  <div class="hero-visual">
+
+    <div class="hero-visual-card">
+
+      <img
+        src="https://res.cloudinary.com/dllosyr3z/image/upload/v1777847243/Productos_xz8l9z.png"
+        alt="Regalo personalizado SoulGifted Studio"
+      />
+
+      <div class="hero-caption">
+        <span>Detalles personalizados</span>
+        <span>Hecho con amor ✨</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      <!-- Cinta visual de temporada: cambia imágenes y enlace según la temporada activa -->
+      <section class="season-showcase" aria-label="Diseños de temporada destacados">
+        <div class="season-showcase-inner">
+          <div class="season-track" id="seasonTrack"></div>
+        </div>
+      </section>
+
+      <section class="stats-row">
+        <div class="stat-card"><b>01</b><span>Elige una colección para ver diseños disponibles.</span></div>
+        <div class="stat-card"><b>02</b><span>Pide por código o comparte tu idea personalizada.</span></div>
+        <div class="stat-card"><b>03</b><span>Confirmamos detalles, nombre, frase, foto o logo.</span></div>
+        <div class="stat-card"><b>04</b><span>Preparamos tu regalo listo para entregar.</span></div>
+      </section>
+
+      <section id="colecciones" class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <h2>Explora nuestras colecciones</h2>
+            <p>Elige una colección para ver todos los diseños disponibles. Cada subpágina funciona como un catálogo independiente.</p>
+          </div>
+          <span class="view-pill">Catálogo principal</span>
+        </div>
+
+        <div class="intro-card">
+          <p>Encuentra diseños para tazas, termos, cajas premium, eventos especiales y detalles personalizados.</p>
+        </div>
+
+        <div class="collections-grid">
+          <article class="collection-card">
+            <div class="collection-image">
+              <img src="https://res.cloudinary.com/dllosyr3z/image/upload/v1778890048/Colecci%C3%B3n_Mam%C3%A1_ucxjw3.png" alt="Tazas y Termos Día de las Madres" />
+              <span class="collection-badge">Colección especial</span>
+            </div>
+            <div class="collection-body">
+              <h3>Día de las Madres</h3>
+              <p>Diseños llenos de amor para sorprender a mamá con un regalo único, emotivo y personalizado.</p>
+              <div class="collection-actions">
+                <a class="collection-link" href="https://sites.google.com/view/soulgifted-studio/SoulGifted/coleccion-mama" target="_blank" rel="noopener">Ver colección →</a>
+              </div>
+            </div>
+          </article>
+
+
+<article class="collection-card">
+            <div class="collection-image">
+              <img src="https://res.cloudinary.com/dllosyr3z/image/upload/v1779065817/Colecci%C3%B3n_Papa_hsrfs0.png" alt="Tazas y Termos Día del Padre" />
+              <span class="collection-badge">Colección especial</span>
+            </div>
+            <div class="collection-body">
+              <h3>Día del Padre</h3>
+              <p>Diseños con carácter para sorprender a papá con un regalo único, especial y personalizado.</p>
+              <div class="collection-actions">
+                <a class="collection-link" href="https://sites.google.com/view/soulgifted-studio/SoulGifted/coleccion-papa" target="_blank" rel="noopener">Ver colección →</a>
+              </div>
+            </div>
+          </article>
+
+         
+
+          <article class="collection-card">
+            <div class="collection-image">
+              <img src="https://res.cloudinary.com/dllosyr3z/image/upload/v1777865731/Taza_11_oz_uvimis.png" alt="Tazas personalizadas" />
+              <span class="collection-badge">Personalizable</span>
+            </div>
+            <div class="collection-body">
+              <h3>Tazas personalizadas</h3>
+              <p>Agrega nombre, foto, frase, logo o una idea especial para crear una taza totalmente única.</p>
+              <div class="collection-actions">
+                <a class="collection-link" target="_blank" rel="noopener">Ver colección →</a>
+                <span class="collection-note">Próximamente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="collection-card">
+            <div class="collection-image">
+              <img src="https://res.cloudinary.com/dllosyr3z/image/upload/v1777866030/Termo_Skinny_20_oz_wrck4t.png" alt="Termos personalizados" />
+              <span class="collection-badge">Personalizable</span>
+            </div>
+            <div class="collection-body">
+              <h3>Termos personalizados</h3>
+              <p>Termos de 20 oz para regalos duraderos, eventos especiales, empresas o uso diario con estilo.</p>
+              <div class="collection-actions">
+                <a class="collection-link" target="_blank" rel="noopener">Ver colección →</a>
+                <span class="collection-note">Próximamente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="collection-card">
+            <div class="collection-image">
+              <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80" alt="Cajas premium" />
+              <span class="collection-badge">Regalo listo</span>
+            </div>
+            <div class="collection-body">
+              <h3>Cajas premium</h3>
+              <p>Presentaciones elegantes con caja, moño y detalles decorativos para elevar cualquier regalo.</p>
+              <div class="collection-actions">
+                <a class="collection-link" target="_blank" rel="noopener">Ver colección →</a>
+                <span class="collection-note">Próximamente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="collection-card">
+            <div class="collection-image">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Eventos especiales" />
+              <span class="collection-badge">Eventos</span>
+            </div>
+            <div class="collection-body">
+              <h3>Eventos especiales</h3>
+              <p>Diseños para bodas, aniversarios, bautizos, cumpleaños y recuerdos personalizados.</p>
+              <div class="collection-actions">
+                <a class="collection-link" target="_blank" rel="noopener">Ver colección →</a>
+                <span class="collection-note">Próximamente</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="collection-card">
+            <div class="collection-image">
+              <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=900&q=80" alt="Empaques personalizados" />
+              <span class="collection-badge">Complementos</span>
+            </div>
+            <div class="collection-body">
+              <h3>Empaques y blíster</h3>
+              <p>Cajas tipo blíster para taza de 11 oz, blancas o sublimadas según la necesidad del cliente.</p>
+              <div class="collection-actions">
+                <a class="collection-link" target="_blank" rel="noopener">Ver colección →</a>
+                <span class="collection-note">Próximamente</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="proceso" class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <h2>¿Cómo funciona?</h2>
+            <p>Hicimos el proceso simple para que puedas elegir, personalizar y pedir tu regalo sin complicaciones.</p>
+          </div>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-icon">1️⃣</div>
+            <h3>Elige una colección</h3>
+            <p>Explora los catálogos por temporada, producto o tipo de regalo.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-icon">2️⃣</div>
+            <h3>Pide por código</h3>
+            <p>Envíanos el código del diseño que te gustó o cuéntanos tu idea.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-icon">3️⃣</div>
+            <h3>Recibe tu regalo</h3>
+            <p>Preparamos tu producto personalizado y listo para entregar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="confianza" class="section-wrap">
+        <div class="trust-section">
+          <div class="trust-image">
+            <img src="https://res.cloudinary.com/dllosyr3z/image/upload/v1777861091/Sublimaci%C3%B3n_Productos_tpw8zn.png" alt="Detalles personalizados SoulGifted Studio" />
+          </div>
+          <div class="trust-card">
+            <h2>¿Por qué elegir SoulGifted Studio?</h2>
+            <p style="color: var(--muted); line-height: 1.55;">
+              Cada producto está pensado para transmitir cariño, personalidad y una experiencia especial.
+            </p>
+            <div class="trust-list">
+              <div class="trust-item"><span>✓</span><div><strong>Diseños únicos:</strong> colecciones visuales listas para elegir o adaptar.</div></div>
+              <div class="trust-item"><span>✓</span><div><strong>Personalización real:</strong> nombres, fotos, frases, logos o ideas especiales.</div></div>
+              <div class="trust-item"><span>✓</span><div><strong>Atención directa:</strong> puedes pedir información por WhatsApp o Messenger.</div></div>
+              <div class="trust-item"><span>✓</span><div><strong>Entrega local:</strong> atención en Monterrey y zona metropolitana.</div></div>
+              <div class="trust-item"><span>✓</span><div><strong>Regalos con significado:</strong> detalles pensados para emocionar.</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <h2>¿Listo para crear un regalo especial?</h2>
+        <p>No regales cualquier cosa. Regala algo que le recuerde cada día cuánto la amas.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-whatsapp" href="https://wa.me/528123279137?text=Hola%2C%20quiero%20hacer%20un%20pedido%20personalizado" target="_blank" rel="noopener">📲 Pedir por WhatsApp</a>
+          <a class="btn btn-messenger" href="https://m.me/1168488446337607" target="_blank" rel="noopener">💬 Messenger</a>
+        </div>
+      </section>
+
+      <p class="footer">SoulGifted Studio · Catálogo principal de regalos personalizados</p>
+    </div>
+  </main>
+
+
+
+  <div class="season-modal" id="seasonModal" onclick="closeSeasonModal(event)">
+    <div class="season-modal-card">
+      <button class="season-close" type="button" onclick="hideSeasonModal()" aria-label="Cerrar vista de diseño">×</button>
+      <img id="seasonModalImg" src="" alt="Diseño de temporada sublimado SoulGifted Studio">
+      <div class="season-modal-actions">
+        <a class="season-album-btn" href="https://sites.google.com/view/soulgifted-studio/SoulGifted/coleccion-mundial-2026" target="_blank" rel="noopener">Ver álbum completo →</a>
+        <a class="season-whatsapp-btn" href="https://wa.me/528123279137?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1os%20del%20Mundial%202026" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-bar">
+    <a class="float-btn whatsapp" data-label="WhatsApp" href="https://wa.me/528123279137?text=Hola%20%F0%9F%98%8A%20quiero%20informaci%C3%B3n%20sobre%20termos%20para%20mam%C3%A1" target="_blank" rel="noopener" title="WhatsApp">☘</a>
+    <a class="float-btn messenger" data-label="Messenger" href="https://m.me/1168488446337607" target="_blank" rel="noopener" title="Messenger">💬</a>
+    <a class="float-btn facebook" data-label="Facebook" href="https://www.facebook.com/SoulGiftedStudio" target="_blank" rel="noopener" title="Facebook">f</a>
+  </div>
+
+
+  <script>
+    const seasonDesigns = [
+      'https://res.cloudinary.com/dllosyr3z/image/upload/v1777866030/Termo_Skinny_20_oz_wrck4t.png',
+      'https://res.cloudinary.com/dllosyr3z/image/upload/v1777865731/Taza_11_oz_uvimis.png',
+      'https://res.cloudinary.com/dllosyr3z/image/upload/v1777847243/Productos_xz8l9z.png',
+      'https://res.cloudinary.com/dllosyr3z/image/upload/v1777861091/Sublimaci%C3%B3n_Productos_tpw8zn.png',
+      'https://res.cloudinary.com/dllosyr3z/image/upload/v1779065817/Colecci%C3%B3n_Papa_hsrfs0.png',
+      'https://res.cloudinary.com/dllosyr3z/image/upload/v1778890048/Colecci%C3%B3n_Mam%C3%A1_ucxjw3.png'
+    ];
+
+    function buildSeasonTrack() {
+      const track = document.getElementById('seasonTrack');
+      if (!track) return;
+      const repeatedDesigns = [...seasonDesigns, ...seasonDesigns];
+      repeatedDesigns.forEach((src, index) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'season-item';
+        button.onclick = () => showSeasonModal(src);
+        button.innerHTML = `<img src="${src}" alt="Diseño de temporada ${index + 1}">`;
+        track.appendChild(button);
+      });
+    }
+
+    function showSeasonModal(src) {
+      const modal = document.getElementById('seasonModal');
+      const modalImg = document.getElementById('seasonModalImg');
+      modalImg.src = src;
+      modal.classList.add('active');
+    }
+
+    function hideSeasonModal() {
+      document.getElementById('seasonModal').classList.remove('active');
+    }
+
+    function closeSeasonModal(event) {
+      if (event.target.id === 'seasonModal') hideSeasonModal();
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') hideSeasonModal();
+    });
+
+    buildSeasonTrack();
+  </script>
+
 </body>
 </html>
-
