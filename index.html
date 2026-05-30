@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Opciones Carrusel Temporada | SoulGifted Studio</title>
+<style>
+:root{
+  --ink:#071936;--muted:#667790;--blue:#0b4ea2;--blue-dark:#073779;--blue-soft:#eef6ff;--white:#fff;--line:rgba(11,78,162,.13);--gold:#d4aa58;--shadow:0 24px 70px rgba(35,78,132,.16);--radius:26px;
+}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:radial-gradient(circle at 0% 24%,rgba(188,220,255,.62),transparent 25%),radial-gradient(circle at 96% 4%,rgba(218,237,255,.92),transparent 26%),linear-gradient(180deg,#fff 0%,#f3f9ff 55%,#fff 100%);min-height:100vh;padding:24px 12px 60px;overflow-x:hidden}.page{width:min(1180px,100%);margin:auto}.demo-title{background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.9);box-shadow:var(--shadow);border-radius:30px;padding:26px;margin-bottom:22px;text-align:center}.demo-title h1{font-size:clamp(28px,4vw,48px);letter-spacing:-1px;margin-bottom:8px}.demo-title p{color:var(--muted);line-height:1.5}.option{background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.95);box-shadow:0 18px 48px rgba(35,78,132,.12);border-radius:30px;padding:22px;margin:20px 0}.option-head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:16px}.option-head h2{font-size:22px}.option-head span{font-size:12px;font-weight:900;color:var(--blue-dark);background:rgba(11,78,162,.08);border:1px solid var(--line);padding:8px 12px;border-radius:999px;white-space:nowrap}.season-strip{position:relative;overflow:hidden;border-radius:28px;background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(238,246,255,.98));border:1px solid var(--line);box-shadow:0 14px 40px rgba(35,78,132,.10)}.season-track{display:flex;width:max-content;animation:scroll 28s linear infinite}.season-strip:hover .season-track{animation-play-state:paused}@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}.season-card{position:relative;flex:0 0 auto;cursor:pointer;border:none;background:transparent;padding:0;overflow:hidden}.season-card img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s ease}.season-card:hover img{transform:scale(1.055)}.season-card::after{content:"Ver diseño";position:absolute;left:50%;bottom:13px;transform:translateX(-50%) translateY(8px);opacity:0;background:rgba(7,25,54,.78);color:white;font-size:12px;font-weight:900;padding:8px 11px;border-radius:999px;transition:.2s;white-space:nowrap}.season-card:hover::after{opacity:1;transform:translateX(-50%) translateY(0)}.option-1 .season-track{gap:14px;padding:16px}.option-1 .season-card{width:210px;height:270px;border-radius:22px;box-shadow:0 16px 34px rgba(35,78,132,.15)}.option-2 .season-track{gap:0;padding:0}.option-2 .season-card{width:260px;height:170px}.option-2 .season-card img{border-right:1px solid rgba(255,255,255,.7)}.option-3 .season-strip{background:linear-gradient(135deg,#071936,#0b4ea2);padding:18px}.option-3 .season-track{gap:18px}.option-3 .season-card{width:230px;height:230px;border-radius:50%;box-shadow:0 18px 42px rgba(0,0,0,.25);border:5px solid rgba(255,255,255,.9)}.option-4 .season-track{gap:12px;padding:14px}.option-4 .season-card{width:300px;height:210px;border-radius:24px;box-shadow:0 16px 34px rgba(35,78,132,.14)}.option-4 .season-card:nth-child(2n){width:180px}.option-4 .season-card:nth-child(3n){width:240px}.modal{position:fixed;inset:0;background:rgba(7,25,54,.72);display:none;align-items:center;justify-content:center;z-index:99999;padding:20px}.modal.active{display:flex}.modal-card{width:min(900px,100%);background:white;border-radius:30px;padding:16px;box-shadow:0 34px 90px rgba(0,0,0,.35);position:relative}.modal-card img{width:100%;max-height:74vh;object-fit:contain;border-radius:22px;background:#eef6ff;display:block}.close{position:absolute;right:16px;top:16px;border:none;border-radius:999px;background:rgba(7,25,54,.82);color:white;width:42px;height:42px;font-size:22px;cursor:pointer}.modal-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}.modal-actions a{padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:900}.album{background:linear-gradient(135deg,#5ca2ff,var(--blue-dark));color:white}.whatsapp{background:#25d366;color:white}.note{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.45}@media(max-width:640px){body{padding:0 0 40px}.demo-title,.option{border-radius:0;margin:0 0 14px}.option{padding:14px}.option-head{align-items:flex-start}.option-head h2{font-size:18px}.option-head span{font-size:10px}.option-1 .season-card{width:150px;height:200px}.option-2 .season-card{width:210px;height:140px}.option-3 .season-card{width:160px;height:160px}.option-4 .season-card{width:230px;height:165px}.option-4 .season-card:nth-child(2n){width:150px}.modal{padding:10px}.modal-card{border-radius:24px;padding:10px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="demo-title">
+    <h1>Opciones de carrusel visual</h1>
+    <p>Solo imágenes destacadas de temporada. Haz clic en cualquier diseño para verlo ampliado.</p>
+  </div>
+
+  <section class="option option-1">
+    <div class="option-head"><h2>Opción 1 · Carrusel premium vertical</h2><span>Recomendada para termos Skinny</span></div>
+    <div class="season-strip"><div class="season-track" id="track1"></div></div>
+    <p class="note">Se ve más elegante para termos porque aprovecha el formato alto del producto.</p>
+  </section>
+
+  <section class="option option-2">
+    <div class="option-head"><h2>Opción 2 · Cinta limpia tipo escaparate</h2><span>Más discreta</span></div>
+    <div class="season-strip"><div class="season-track" id="track2"></div></div>
+    <p class="note">Ideal si quieres que se vea como una cinta flotante sin ocupar tanta altura.</p>
+  </section>
+
+  <section class="option option-3">
+    <div class="option-head"><h2>Opción 3 · Burbujas destacadas</h2><span>Más llamativa</span></div>
+    <div class="season-strip"><div class="season-track" id="track3"></div></div>
+    <p class="note">Funciona bien para temporadas fuertes como Mundial, Navidad o graduaciones.</p>
+  </section>
+
+  <section class="option option-4">
+    <div class="option-head"><h2>Opción 4 · Galería editorial</h2><span>Más moderna</span></div>
+    <div class="season-strip"><div class="season-track" id="track4"></div></div>
+    <p class="note">Da sensación de catálogo boutique; mezcla tamaños para que no se vea repetitivo.</p>
+  </section>
+</div>
+
+<div class="modal" id="modal" onclick="closeModal(event)">
+  <div class="modal-card">
+    <button class="close" onclick="hideModal()">×</button>
+    <img id="modalImg" src="" alt="Diseño destacado sublimado">
+    <div class="modal-actions">
+      <a class="album" href="https://sites.google.com/view/soulgifted-studio/SoulGifted/coleccion-mundial-2026" target="_blank" rel="noopener">Ver álbum completo →</a>
+      <a class="whatsapp" href="https://wa.me/528123279137?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1os%20del%20Mundial%202026" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const designs = [
+  'https://res.cloudinary.com/dllosyr3z/image/upload/v1777866030/Termo_Skinny_20_oz_wrck4t.png',
+  'https://res.cloudinary.com/dllosyr3z/image/upload/v1777865731/Taza_11_oz_uvimis.png',
+  'https://res.cloudinary.com/dllosyr3z/image/upload/v1777847243/Productos_xz8l9z.png',
+  'https://res.cloudinary.com/dllosyr3z/image/upload/v1777861091/Sublimaci%C3%B3n_Productos_tpw8zn.png',
+  'https://res.cloudinary.com/dllosyr3z/image/upload/v1779065817/Colecci%C3%B3n_Papa_hsrfs0.png',
+  'https://res.cloudinary.com/dllosyr3z/image/upload/v1778890048/Colecci%C3%B3n_Mam%C3%A1_ucxjw3.png'
+];
+function buildTrack(id){
+  const track=document.getElementById(id);
+  const repeated=[...designs,...designs];
+  repeated.forEach(src=>{
+    const btn=document.createElement('button');
+    btn.className='season-card';
+    btn.onclick=()=>showModal(src);
+    btn.innerHTML=`<img src="${src}" alt="Diseño de temporada SoulGifted Studio">`;
+    track.appendChild(btn);
+  });
+}
+['track1','track2','track3','track4'].forEach(buildTrack);
+function showModal(src){document.getElementById('modalImg').src=src;document.getElementById('modal').classList.add('active');}
+function hideModal(){document.getElementById('modal').classList.remove('active');}
+function closeModal(e){if(e.target.id==='modal')hideModal();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')hideModal();});
+</script>
+</body>
+</html>
 
